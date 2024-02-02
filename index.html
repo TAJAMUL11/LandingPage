@@ -4,43 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css">
+
+        <!-- boxicon css -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 <body>
+    <main>
     <section id="home">
      <header class="head">
+        <h1>Fresh Sweets and Bakery</h1>
+    </header> 
         <nav class="nav-bar">
             <ul>
                 <li> <a href="#home">Home</a></li>
-                <li> <a href="#Products">Products</a></li>
+                <li> <a href="#product">Products</a></li>
                 
             </ul>
         </nav>
-     </header> 
-     <div class="images">
-        <img src="./Images/ImgHome1.jpg" class="one">
-        
+        <div class="para">
+          <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite">
+            <p>SALE IS LIVE, get heavy discounts on your favourite sweets and bakery.</p>
+          </marquee>
+        </div>
+     <div class="home-img">
+         <img src="./Images/ImgHome1.jpg" alt="Home" width="1920" height="1355">
      </div>
      
 
 </section>
 
-<section class="Products">
-
-    <div class="main-body">
-        <div class="flex">
-            <div class="box">🚀</div>
-            <div class="box">😀</div>
-            <div class="box">😜</div>
-            <div class="box">🙂</div>
-            <div class="box">🐈</div>
-            <div class="box">💓</div>
-            <div class="box">😑</div>
-            <div class="box">⬇️</div>
+<section id="product">
+    <h2 class="heading"><i class='bx bx-cake'></i>Products</h2>
+    
+    <div class="Product-container">
+        <div class="Product-box">
+            <img src="./Products/5donuts.jpg" alt="" width="3456" height="5184">
+            <div class="Product-layer">
+                <h6>Deliciuos Donuts</h6>
+                <strong><i class='bx bx-rupee' ></i>75/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+             
+            </div>
         </div>
-    </div>
+        <div class="Product-box">
+            <img src="./Products/brownies.jpg" alt="" width="3840" height="5080">
+            <div class="Product-layer">
+                <h6> Chocolate Brownies</h6>
+                <strong><i class='bx bx-rupee' ></i>50/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/Ccake.jpg" alt="" width="3456" height="5184">
+            <div class="Product-layer">
+                <h6>Chocolate Cake</h6>
+                <strong><i class='bx bx-rupee' ></i>190/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
 
-</section>
+            
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/ccupcake.jpg" alt="" width="4005" height="6000">
+            <div class="Product-layer">
+                <h6>Choco Cupcake</h6>
+                <strong><i class='bx bx-rupee' ></i>110/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+             
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/clava.jpg" alt="" width="4000" height="6000">
+            <div class="Product-layer">
+                <h6>Choco Lava</h6>
+                <strong><i class='bx bx-rupee' ></i>129/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+            
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/cookies.jpg" alt="" width="2848" height="4272">
+            <div class="Product-layer">
+                <h6>Brown Cookies</h6>
+                <strong><i class='bx bx-rupee' ></i>45/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/one.jpg" alt="" width="3504" height="2336">
+            <div class="Product-layer">
+                <h6>French Bread</h6>
+                <strong><i class='bx bx-rupee' ></i>75/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+                
+              
+            </div>
+        </div>
+        <div class="Product-box">
+            <img src="./Products/pastryblack.jpg" alt="" width="3456" height="5184">
+            <div class="Product-layer">
+                <h6>Black Forest</h6>
+                <strong><i class='bx bx-rupee' ></i>145/pc</strong>
+                <div class="dtls">
+                    <button class="hide">Details</button>
+                    <p><i class='bx bx-cart-add' ></i></p>
+                </div>
+               
+            </div>
+        </div>        
+        </div>
+  </section>
+</main>
+  <!-- footer design -->
+
+  <footer class="footer">
+    <div class="footer-icons">
+        <a href="#"><i class='bx bx-phone-call'></i></a>
+        <a href="#"><i class='bx bxl-gmail'></i></a>
+        <a href="#"><i class='bx bxl-facebook-square'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>       
+    
+    </div>
+    </footer>
    
 <script src="index.js"></script>
 </body>
