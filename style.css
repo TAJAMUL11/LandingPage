@@ -25,6 +25,7 @@ html{
     background-size: cover;
     padding: 2%;
     border-bottom: 1px solid #b0a4a49c;
+    height: 8rem;
 
 }
 
@@ -34,6 +35,7 @@ html{
     font-size: 3rem;
     text-shadow: 4px 10px .8rem #fff;
     background-color: hsla(0, 0%, 50%, 0.6);
+    height: 4rem;
 }
 
 
@@ -46,6 +48,7 @@ html{
     padding: .1rem;
     margin-top: 0;
     background: linear-gradient(#e664648b, #b6bae9);
+    height: 4rem;
     
 
 }
@@ -79,6 +82,7 @@ li a{
 .para{
     width: 100%;
     border: 1px solid #b0a4a49c;
+    height: 1.7rem;
     
 
 }
@@ -89,6 +93,7 @@ li a{
     align-items: center;
     flex-wrap: wrap;
     color: red;
+    font-size: 1.3rem;
     
     
 }
@@ -148,7 +153,9 @@ li a{
 }
 .Product-box{
     width: 100%;
+    
 }
+
 
 .Product-box img{
     width: 80%;
@@ -162,6 +169,8 @@ li a{
     border: 2px solid grey;
     padding-bottom: 3px;
     background-color: #f1dededf;
+    border-radius: 3%;
+    
 }
 
 .Product-layer h6{
@@ -244,13 +253,13 @@ a i{
 
 /*Media Queries*/
 
-@media(width < 1440px){
+@media(width <= 1440px){
     html{
         font-size: 95%;
     }
     .home-img img{
-        width: 35%;
-        margin-left: 33%;
+        width: 32.3%;
+        margin-left: 31%;
     }
     .Product-layer{
         width: 96%;
@@ -258,7 +267,7 @@ a i{
     }
 }
 
-@media(width < 1024px){
+@media(width <= 1024px){
     html{
         font-size: 85%;
     }
@@ -266,7 +275,7 @@ a i{
         font-size: 3.2rem;
     }
     .home-img img{
-        width: 52.5%;
+        width: 48.6%;
         margin-left: 24%;
     }
     .Product-box{
@@ -290,11 +299,11 @@ a i{
     }
 }
 
-@media(width < 768px){
+@media(width <= 768px){
 
     .home-img img{
-        width: 72%;
-        margin-left: 16%;
+        width: 53.7%;
+        margin-left: 22%;
     }
 
     footer{
@@ -305,6 +314,16 @@ a i{
     }
     a i{
         font-size: 1.9rem;
+    }
+    .para{
+        height: 2rem;
+    }
+    #home .head{
+        height: 11rem;
+    }
+
+    .nav-bar ul{
+        height: 5rem;
     }
     .Product-layer{
         width: 85%;
@@ -323,8 +342,15 @@ a i{
 }
 @media(width < 635px){
     .home-img img{
-        width: 91%;
-        margin-left: 6%;
+        width: 54%;
+        margin-left: 23%;
+    }
+
+    #home .head{
+        height: 14rem;
+    }
+    .head h1{
+        font-size: 4.2rem;
     }
 
     footer{
@@ -333,6 +359,12 @@ a i{
     a i{
         font-size: 1.8rem;
     }
+    .nav-bar ul{
+        height: 5.5rem;
+    }
+    .para{
+        height: 2.3rem;
+    }
     .Product-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -342,19 +374,25 @@ a i{
 
 }
 
-@media(width < 425px){
+@media(width <= 425px){
 
     html{
         font-size: 67%;
     }
+    #home .head{
+        height: 17rem;
+    }
+
+  
     .home-img img{
-        width: 90%;
+        width: 100%;
         margin-left: 0;
 
         
     }
     .head h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
+
     }
     .Product-container{
         display: grid;
@@ -364,7 +402,7 @@ a i{
     }
 }
 
-@media(width < 375px){
+@media(width <= 375px){
     html{
         font-size: 64%;
     }
@@ -378,24 +416,27 @@ a i{
     a i{
         font-size: 2rem;
     }
+    
+    .nav-bar ul{
+        height: 7rem;
+    }
 }
 
 @media(width < 325px){
     html{
-        font-size: 64%;
+        font-size: 70%;
     }
     .home-img img{
         width: 100%;
         margin-left: 0;  
     }
     .head h1{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .Product-container{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
         place-content: center;
     }
     .Product-layer{
@@ -406,7 +447,7 @@ a i{
     }
 
     footer{
-        height: 2.9rem;
+        height: 3.8rem;
     }
     a i{
         font-size: 2.1rem;
