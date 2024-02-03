@@ -12,6 +12,7 @@ html{
 }
 #home{
     height: 100vh;
+    background-color: #e2d2c3;
 }
 
 #home .head{
@@ -87,6 +88,7 @@ li a{
     width: 100%;
     border: 1px solid #b0a4a49c;
     height: 1.7rem;
+    /* background-color: #e2d2c3; */
     
 
 }
@@ -97,7 +99,7 @@ li a{
     align-items: center;
     flex-wrap: wrap;
     color: red;
-    font-size: 1.3rem;
+    font-size: 1.26rem;
     
     
 }
@@ -105,7 +107,7 @@ li a{
 #home .home-img{
     width: 100%;
     height:auto ;
-    background-color: #e2d2c3;
+    /* background-color: #e2d2c3; */
 
 }
 
@@ -139,7 +141,6 @@ li a{
    
 }
 .heading{
-    text-shadow: 4px 10px .8rem #fff;
     background: linear-gradient(#e664648b, #b6bae9);
     font-size: 3rem;
     /* position: sticky;
@@ -168,8 +169,8 @@ li a{
 
 
 .Product-box img{
-    width: 78%;
-    height: 60%;
+    width: 100%;
+    height: 65%;
    border: 1px solid grey;
    border-radius: 3%;
    transition: 0.5s ease;
@@ -313,18 +314,19 @@ a i{
     }
     .Product-layer{
         width: 90%;
-        margin-left: 1rem ;
-        font-size: 1.2rem
+        margin-left: 1.3rem ;
+        font-size: 1.2rem;
 
     }
 
     .Product-layer h6{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         padding: 5px;
+        border-radius: 7%;
         
     }
     .Product-box img{
-        width: 85%;
+        width: 100%;
 
     }
 }
@@ -332,7 +334,7 @@ a i{
 @media(width <= 768px){
 
     .home-img img{
-        width: 56.8%;
+        width: 56.5%;
         margin-left: 22%;
     }
 
@@ -359,10 +361,6 @@ a i{
         width: 85%;
 
     }
-    .Product-box img{
-        width: 89%;
-
-    }
     .Product-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -383,7 +381,7 @@ a i{
         font-size: 67%;
     }
     #home .head{
-        height: 15rem;
+        height: 13rem;
     }
 
   
@@ -395,8 +393,8 @@ a i{
         
     }
     .head h1{
-        font-size: 3.8rem;
-        margin-top: 5rem;
+        font-size: 3.56rem;
+        margin-top: 3rem;
         height: 4.7rem;
 
     }
@@ -416,9 +414,6 @@ a i{
         padding: 1rem;
 
     }
-    .Product-layer h6{
-        font-size: 5rem;
-    }
     footer{
         height: 4rem;
     }
@@ -426,17 +421,23 @@ a i{
         font-size: 2.1rem;
     }
     .hide{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     p i{
         font-size: 2rem; 
     }
     .Product-layer h6{
-        font-size: 1.7rem;
+        font-size: 3.5rem;
+    }
+    .Product-layer strong{
+        font-size: 2.6rem;
+    }
+    .Product-layer i{
+        font-size: 2.6rem;
     }
 }
 
-@media(width <= 375px){
+@media(width <= 378px){
     html{
         font-size: 64%;
     }
@@ -445,6 +446,10 @@ a i{
         margin-left: 0;
         height: auto; 
     }
+    .head h1{
+        font-size: 3.2rem;
+    }
+
     footer{
         height: 2.7rem;
     }
@@ -455,18 +460,21 @@ a i{
     .nav-bar ul{
         height: 7rem;
     }
+
 }
 
-@media(width < 325px){
+@media(width <= 327px){
     html{
-        font-size: 70%;
+        font-size: 68%;
     }
     .home-img img{
         width: 100%;
         margin-left: 0;  
     }
-    .head h1{
-        font-size: 2.6rem;
+    #head h1{
+        font-size: 1.6rem;
+        letter-spacing: 0;
+        margin: auto;
     }
 
     .Product-container{
@@ -476,9 +484,11 @@ a i{
     }
     .Product-layer{
         width: 100%;
-        margin-left: 0 ;
-        margin: 2px;
+        margin-left: .2rem ;
 
+    }
+    .Product-layer h6{
+        font-size: 3rem;
     }
 
     footer{
