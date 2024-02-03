@@ -152,7 +152,7 @@ li a{
 
 .Product-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: .5rem;
     place-content: center;
     text-align: center;
@@ -328,6 +328,11 @@ a i{
     .Product-box img{
         width: 100%;
 
+    }
+    .Product-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .8rem;
     }
 }
 
