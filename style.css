@@ -40,7 +40,7 @@ html{
     height: 5.5rem;
     box-shadow: 0 0 1rem #000;
     letter-spacing: .08rem;
-    border-radius: 3%;
+    border-radius: 8%;
 }
 
 
@@ -103,6 +103,9 @@ li a{
     
     
 }
+img{
+    display: block;
+}
 
 #home .home-img{
     width: 100%;
@@ -152,18 +155,16 @@ li a{
 
 .Product-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: .5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .4rem;
     place-content: center;
     text-align: center;
     background-color: #e2d2c3;
 }
 .Product-box{
     width: 100%;
-    border: 1px solid grey;
-    border-radius: 3%;
-    height: 90%;
-    margin: 3px 5px;
+    border: 2px solid grey;
+    height: 80%;
     
 }
 
@@ -172,7 +173,6 @@ li a{
     width: 100%;
     height: 65%;
    border: 1px solid grey;
-   border-radius: 3%;
    transition: 0.5s ease;
     
 }
@@ -183,12 +183,12 @@ li a{
 }
 
 .Product-layer{
-    padding-bottom: 3px;
-    height: 40%;
+    height: 28%;
+    background: linear-gradient(#e664648b, #b6bae9);
 }
 
 .Product-layer h6{
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #000;
     border:1px solid grey;
     height: 30%;
@@ -199,33 +199,32 @@ li a{
 }
 
 .Product-layer strong{
-    color: blueviolet;
-    font-size: 1.7rem;
+    color: red;
+    font-size: 1.5rem;
 }
 .Product-layer .dtls{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: .7rem;
+    gap: .5rem;
+
 
 }
 .hide{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: #c0b3b3c5;
     border-radius: 5px;
-    padding: 3px;
     transition: 0.5s ease-in-out;
 }
 .hide:hover{
     box-shadow: 0 0 .4rem #000;
 }
 p i{
-    font-size: 1.98rem;
+    font-size: 1.5rem;
     transition: 0.5s ease-in-out;
+    border: 1px solid  grey;
     margin-left: 4px ;
-    border: 1px solid #000;
     border-radius: 5px;
 }
 p i:hover{
@@ -281,20 +280,20 @@ a i{
         margin-left: 31%;
     }
     .Product-layer{
-        width: 96%;
+        width: 100%;
+        height: 28%;
 
     }
+
     .Product-box img{
         width: 100%;
     }
     .Product-layer {
         width: 100%;
         text-align: center;
-        font-size: 3rem;
+        
     }
-    .Product-layer h6{
-        font-size: 2.9rem;
-    }
+  
 }
 
 @media(width <= 1024px){
@@ -309,20 +308,16 @@ a i{
         width: 51.1%;
         margin-left: 24%;
     }
-    .Product-box{
-        width: 98%;
-    }
-    .Product-layer{
-        width: 90%;
-        margin-left: 1.3rem ;
-        font-size: 1.2rem;
-
-    }
 
     .Product-layer h6{
         font-size: 1.7rem;
         padding: 5px;
         
+    }
+    .Product-layer{
+        width: 100%;
+        height: 29.5%;
+
     }
     .Product-box img{
         width: 100%;
@@ -363,17 +358,17 @@ a i{
         height: 5rem;
     }
     .Product-layer{
-        width: 85%;
+        height: 28%;
 
     }
     .Product-container{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
         place-content: center;
     }
     footer{
-        height: 4rem;
+        height: 3.5rem;
     }
     a i{
         font-size: 2.3rem;
@@ -393,53 +388,55 @@ a i{
     .home-img img{
         width: 100%;
         margin-left: 0.1%;
-        height: 100%;
-        margin-top: 7rem;
+        margin-top: 2rem;
 
         
     }
     .head h1{
-        font-size: 3.56rem;
+        font-size: 4.5rem;
         margin-top: 3rem;
         height: 4.7rem;
 
     }
     .Product-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         place-content: center;
+        gap: 0;
     }
   
     .Product-box img{
         width: 100%;
+        height: 80%;
         
     }
-    
-
     .Product-layer{
-        padding: 1rem;
+        height: 19.6%;
 
+    }
+
+    .hide{
+        font-size: 2rem;
+    }
+    p i{
+        font-size: 2rem; 
+    }
+    .Product-layer h6{
+        font-size: 2.5rem;
+        margin: 1px 0;
+        padding: 0;
+    }
+    .Product-layer strong{
+        font-size: 2.3rem;
+    }
+    .Product-layer i{
+        font-size: 2.3rem;
     }
     footer{
         height: 4rem;
     }
     a i{
         font-size: 2.1rem;
-    }
-    .hide{
-        font-size: 2.5rem;
-    }
-    p i{
-        font-size: 2rem; 
-    }
-    .Product-layer h6{
-        font-size: 3.5rem;
-    }
-    .Product-layer strong{
-        font-size: 2.6rem;
-    }
-    .Product-layer i{
-        font-size: 2.6rem;
     }
 }
 
@@ -454,11 +451,11 @@ a i{
         margin-top: 6.1rem;
     }
     .head h1{
-        font-size: 3.2rem;
+        font-size: 4.8rem;
     }
 
     footer{
-        height: 2.7rem;
+        height: 3.2rem;
     }
     a i{
         font-size: 2rem;
@@ -466,6 +463,10 @@ a i{
     
     .nav-bar ul{
         height: 7rem;
+    }
+    .Product-layer{
+        height: 20%;
+
     }
 
 }
@@ -479,7 +480,7 @@ a i{
         margin-left: 0;  
     }
     #head h1{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         letter-spacing: 0;
         margin: auto;
     }
@@ -488,21 +489,30 @@ a i{
         display: grid;
         grid-template-columns: 1fr;
         place-content: center;
+        overflow: hidden;
     }
     .Product-layer{
         width: 100%;
-        margin-left: .2rem ;
 
     }
+    .Product-layer strong{
+        font-size: 2.1rem;
+    }
     .Product-layer h6{
-        font-size: 3rem;
+        font-size: 2.2rem;
+    }
+    .hide{
+        font-size: 1.5rem;
+    }
+    p i{
+        font-size: 1.5rem; 
     }
 
     footer{
         height: 3.5rem;
     }
     a i{
-        font-size: 2.1rem;
+        font-size: 2rem;
     }
 }
 
