@@ -91,9 +91,7 @@ li a{
     align-items: center;
     flex-wrap: wrap;
     color: red;
-    font-size: 1.26rem;
-    
-    
+    font-size: 1.26rem;  
 }
 img{
     display: block;
@@ -118,7 +116,6 @@ img{
 
 
 #product .heading{
-    /* background-color: hsla(0, 0%, 50%, 0.6); */
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -131,8 +128,6 @@ img{
 .heading{
     background: linear-gradient(#e664648b, #b6bae9);
     font-size: 3rem;
-    /* position: sticky;
-    top: 0; */
     border: 1px solid grey;
     height: 6rem;
     
@@ -140,7 +135,7 @@ img{
 
 .Product-container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: .4rem;
     place-content: center;
     text-align: center;
@@ -168,7 +163,7 @@ img{
 }
 
 .Product-layer{
-    height: 28%;
+    height: 29.3%;
     background: linear-gradient(#e664648b, #b6bae9);
 }
 
@@ -177,6 +172,7 @@ img{
     color: #000;
     border:1px solid grey;
     height: 30%;
+    font-weight: 100;
     margin-top: 2rem;
     
     
@@ -258,16 +254,12 @@ a i{
 
 @media(width <= 1440px){
     html{
-        font-size: 94%;
+        font-size: 90%;
     }
     .home-img img{
-        width: 34.3%;
-        margin-left: 31%;
-    }
-    .Product-layer{
-        width: 100%;
-        height: 28%;
-
+        width: 70%;
+        height: auto;
+        margin-left: 64%;
     }
 
     .Product-box img{
@@ -290,8 +282,8 @@ a i{
         height: 4.6rem;
     }
     .home-img img{
-        width: 51.1%;
-        margin-left: 24%;
+        width: 100%;
+        margin-left: 48%;
     }
 
     .Product-layer h6{
@@ -318,8 +310,9 @@ a i{
 @media(width <= 768px){
 
     .home-img img{
-        width: 56.5%;
-        margin-left: 22%;
+        width: 100%;
+        margin-left: 50%;
+        margin-top: 1.7rem;
     
     }
 
@@ -335,6 +328,10 @@ a i{
     .para{
         height: 2rem;
     }
+    .head h1{
+        padding-bottom: 1px;
+        margin-top: 2rem;
+    }
     #home .head{
         height: 11rem;
     }
@@ -343,12 +340,12 @@ a i{
         height: 5rem;
     }
     .Product-layer{
-        height: 28%;
+        height: 30%;
 
     }
     .Product-container{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: .5rem;
         place-content: center;
     }
@@ -367,6 +364,9 @@ a i{
     }
     #home .head{
         height: 13rem;
+    }
+    .home-img{
+        width: 50%;
     }
 
   
