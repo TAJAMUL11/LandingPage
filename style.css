@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 #home{
-    height: 80vh;
+    height: 90vh;
     background-color: #e2d2c3;
     overflow: hidden;
 }
@@ -101,21 +101,20 @@ li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
     gap: 1rem;
     margin: 1rem;
 }
 .bakery i{
-    margin: 2rem;
+    margin: 2rem 1rem;
     font-size: 4.5rem;
     border: 1px solid grey;
+    padding: 1rem;
     border-radius: 30%;
 }
    /* Product style */
 
 #product{
      height: 100vh;
-     overflow-x: hidden;
 }
 
 
@@ -296,11 +295,7 @@ a i:hover{
     }
   
 }
-@media (max-width: 991px){
-  #home{
-    height: 55vh;
-  }
-}
+
 
 @media (max-width: 768px){  
     .Product-container{
@@ -323,9 +318,9 @@ a i:hover{
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 455px){
     html{
-        font-size: 60%;
+        font-size: 58%;
     }
     .Product-container{
         grid-template-columns:1fr;
@@ -345,7 +340,7 @@ a i:hover{
     }
     
     footer{
-        height: 4.5rem;
+        height: 5rem;
     }
     a i{
         font-size: 2.4rem;
