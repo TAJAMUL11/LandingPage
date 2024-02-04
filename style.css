@@ -11,54 +11,54 @@ html{
     scroll-behavior: smooth;
 }
 #home{
-    height: 100vh;
+    height: 80vh;
     background-color: #e2d2c3;
+    overflow: hidden;
 }
 
 #home .head{
     display: flex;
     justify-content: center;
-    align-content: center;
-    /* background-color: cornflowerblue; */
+    align-items: center;
     background-image: url(./Images/bakery.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 2%;
-    border-bottom: 1px solid #b0a4a49c;
-    height: 8rem;
-
-
+    padding: 5%;
 }
 
 
 .head h1{
     color: hsla(0, 28%, 5%, 0.91);
     font-size: 4.3rem;
-    height: 5.3rem;
-    padding: 3px;
+    padding: 5px;
     border: 2px solid grey;
-    border-radius: 5%;
+    /* background-color: hsla(0, 0%, 50%, 0.214); */
+    background-color: hsla(0, 0%, 100%, 0.368);
+    border-radius: 7px;
 }
 
 
 .nav-bar ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+  
     padding: .1rem;
-    background: linear-gradient(#e664648b, #b6bae9);
-    height: 4rem;
+     display: flex;
+     justify-content: end; 
+    align-items: center;
+    flex-wrap: wrap; 
+    
 }
 
 ul li{
-    padding: 2px;
+    padding: 3px;
     list-style: none;
     cursor: pointer;
     transition: 0.5s ease-in-out;
    border: 1px solid grey;
     border-radius: 7px;
+    background-color: hsla(0, 0%, 100%, 0.368);
+    margin: 1rem;
+ 
     
    
     
@@ -75,13 +75,15 @@ li a{
     margin-bottom: .3rem;
     transition: 0.5s ease-in-out;
     padding : 4px;
+    
 }
 
 .para{
     width: 100%;
-    border: 1px solid #b0a4a49c;
-    height: 1.8rem;
     text-transform: uppercase;
+    border-bottom: 1px solid grey;
+    padding: .3rem;
+
     
 
 }
@@ -91,27 +93,29 @@ li a{
     align-items: center;
     flex-wrap: wrap;
     color: red;
-    font-size: 1.26rem;  
-}
-img{
-    display: block;
+    font-size: 1.2rem;  
 }
 
-.home-img{
-    width: 50%;
-    height:50%;
+.bakery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 1rem;
+    margin: 1rem;
 }
-
-.home-img img{
-    width: 93.6%;
-    height: auto;
-    margin-left: 50%;  
+.bakery i{
+    margin: 2rem;
+    font-size: 4.5rem;
+    border: 1px solid grey;
+    border-radius: 30%;
 }
-
    /* Product style */
 
 #product{
      height: 100vh;
+     overflow-x: hidden;
 }
 
 
@@ -121,39 +125,39 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
-   
 }
+
 .heading{
     background: linear-gradient(#e664648b, #b6bae9);
     font-size: 3rem;
     border: 1px solid grey;
-    height: 6rem;
+    height: 5rem;
     
 }
+
 
 .Product-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .4rem;
+    gap: .6rem;
     place-content: center;
     text-align: center;
     background-color: #e2d2c3;
 }
 .Product-box{
-    width: 100%;
-    border: 2px solid grey;
-    height: 80%;
+    width: 90%;
+    height: 70%;
+    margin: .3rem 1rem;
     
 }
 
 
 .Product-box img{
     width: 100%;
-    height: 65%;
+    height: 80%;
    border: 1px solid grey;
    transition: 0.5s ease;
+   border-radius: 5%;
     
 }
 .Product-box img:hover{
@@ -162,38 +166,51 @@ img{
     
 }
 
+/* Product details*/
+
 .Product-layer{
-    height: 29.3%;
+    height: 40%;
     background: linear-gradient(#e664648b, #b6bae9);
+    border: 1px solid grey;
+    padding: .9rem .04rem;
+    margin: 0 .1rem;
+    text-align: center;
+    border-radius: 5%;
+
+
 }
 
 .Product-layer h6{
     font-size: 2rem;
-    color: #000;
-    border:1px solid grey;
-    height: 30%;
-    font-weight: 100;
-    margin-top: 2rem;
-    
-    
-   
+    color: black;
+    font-family: monospace;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+    text-decoration: underline;
+ 
 }
 
-.Product-layer strong{
+.Product-layer h5{
     color: red;
     font-size: 1.5rem;
+    border: 1px solid grey;
+    padding: .8rem;
 }
+
 .Product-layer .dtls{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: .5rem;
-
+    text-align: center;
+    gap: .3rem .6rem;
+    margin: .3rem;
 
 }
+
 .hide{
     font-size: 1.5rem;
+    padding: .2rem;
     background-color: #c0b3b3c5;
     border-radius: 5px;
     transition: 0.5s ease-in-out;
@@ -202,11 +219,12 @@ img{
     box-shadow: 0 0 .4rem #000;
 }
 p i{
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: 0.5s ease-in-out;
     border: 1px solid  grey;
     margin-left: 4px ;
     border-radius: 5px;
+    padding: .1rem;
 }
 p i:hover{
     box-shadow: 0 0 .4rem #000;
@@ -245,261 +263,114 @@ footer{
 
 }
 a i{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    border: 1px solid grey;
+    padding: .4rem;
+    background-color: hsla(0, 0%, 100%, 0.553);
+    border-radius: 50%;
+    transition: .5s ease-in-out;
 
+}
+a i:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 .6rem #000;
 }
 
 
 /*Media Queries*/
 
-@media(width <= 1440px){
+@media (max-width: 1400px){
     html{
-        font-size: 90%;
+        font-size: 80%; 
     }
-    .home-img img{
-        width: 70%;
-        height: auto;
-        margin-left: 64%;
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 60%;
     }
-
-    .Product-box img{
-        width: 100%;
+    .bakery{
+       margin-top: 3rem;
     }
-    .Product-layer {
-        width: 100%;
-        text-align: center;
-        
+    .bakery i{
+        font-size: 8rem;
     }
   
 }
+@media (max-width: 991px){
+  #home{
+    height: 55vh;
+  }
+}
 
-@media(width <= 1024px){
-    html{
-        font-size: 85%;
-    }
-    .head h1{
-        font-size: 4rem;
-        height: 4.6rem;
-    }
-    .home-img img{
-        width: 100%;
-        margin-left: 48%;
-    }
-
-    .Product-layer h6{
-        font-size: 1.7rem;
-        padding: 5px;
-        
-    }
-    .Product-layer{
-        width: 100%;
-        height: 29.5%;
-
-    }
-    .Product-box img{
-        width: 100%;
-
-    }
+@media (max-width: 768px){  
     .Product-container{
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: .8rem;
+    }
+    .Product-layer h6{
+        font-size: 2.1rem;
+    }
+    .Product-layer h5{
+ font-size: 1.8rem;
+    }
+   
+
+}
+
+
+@media (max-width: 617px){
+    .Product-container{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(width <= 768px){
-
-    .home-img img{
-        width: 100%;
-        margin-left: 50%;
-        margin-top: 1.7rem;
-    
-    }
-
-    footer{
-        height: 2.2rem;
-    }
-    .footer-icons{
-        margin: 2px 5px;
-    }
-    a i{
-        font-size: 1.9rem;
-    }
-    .para{
-        height: 2rem;
-    }
-    .head h1{
-        padding-bottom: 1px;
-        margin-top: 2rem;
-    }
-    #home .head{
-        height: 11rem;
-    }
-
-    .nav-bar ul{
-        height: 5rem;
-    }
-    .Product-layer{
-        height: 30%;
-
+@media (max-width: 450px){
+    html{
+        font-size: 60%;
     }
     .Product-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: .5rem;
-        place-content: center;
-    }
-    footer{
-        height: 3.5rem;
-    }
-    a i{
-        font-size: 2.3rem;
-    }
-}
-
-@media(width < 427px){
-
-    html{
-        font-size: 67%;
-    }
-    #home .head{
-        height: 13rem;
-    }
-    .home-img{
-        width: 50%;
-    }
-
-  
-    .home-img img{
-        width: 100%;
-        margin-left: 0.1%;
-        margin-top: 2rem;
-
+        grid-template-columns:1fr;
         
     }
-    .head h1{
-        font-size: 4.5rem;
+    .Product-layer h6{
+        font-size: 4rem;
+    }
+    .Product-layer h5{
+    font-size: 3.3rem;
+    }
+    .hide{
+        font-size: 3rem;
+    }
+    p i{
+        font-size: 3rem; 
+    }
+    
+    footer{
+        height: 4.5rem;
+    }
+    a i{
+        font-size: 2.4rem;
+    }
+    .bakery{
         margin-top: 3rem;
-        height: 4.7rem;
-
-    }
-    .Product-container{
-        display: grid;
-        grid-template-columns: 2fr;
-        place-content: center;
-        gap: 0;
-    }
-  
-    .Product-box img{
-        width: 100%;
-        height: 80%;
-        
-    }
-    .Product-layer{
-        height: 19.6%;
-
-    }
-
-    .hide{
-        font-size: 2rem;
-    }
-    p i{
-        font-size: 2rem; 
-    }
-    .Product-layer h6{
-        font-size: 2.5rem;
-        margin: 1px 0;
-        padding: 0;
-    }
-    .Product-layer strong{
-        font-size: 2.3rem;
-    }
-    .Product-layer i{
-        font-size: 2.3rem;
-    }
-    footer{
-        height: 4rem;
-    }
-    a i{
-        font-size: 2.1rem;
-    }
+     }
+     .bakery i{
+         font-size: 7rem;
+     }
+   
 }
 
-@media(width <= 378px){
+@media (max-width: 375px){
+
     html{
-        font-size: 64%;
+        font-size: 50%;
     }
-    .home-img img{
-        width: 100%;
-        margin-left: 0;
-        height: auto; 
-        margin-top: 6.1rem;
-    }
-    .head h1{
-        font-size: 4.8rem;
-    }
-
-    footer{
-        height: 3.2rem;
-    }
-    a i{
-        font-size: 2rem;
-    }
-    
-    .nav-bar ul{
-        height: 7rem;
-    }
-    .Product-layer{
-        height: 20%;
-
-    }
-
+   
 }
 
-@media(width <= 327px){
-    html{
-        font-size: 68%;
-    }
-    .home-img img{
-        width: 100%;
-        margin-left: 0;  
-    }
-    #head h1{
-        font-size: 1.3rem;
-        letter-spacing: 0;
-        margin: auto;
-    }
 
-    .Product-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        place-content: center;
-        overflow: hidden;
-    }
-    .Product-layer{
-        width: 100%;
 
-    }
-    .Product-layer strong{
-        font-size: 2.1rem;
-    }
-    .Product-layer h6{
-        font-size: 2.2rem;
-    }
-    .hide{
-        font-size: 1.5rem;
-    }
-    p i{
-        font-size: 1.5rem; 
-    }
 
-    footer{
-        height: 3.5rem;
-    }
-    a i{
-        font-size: 2rem;
-    }
-}
+
 
 
 
