@@ -16,30 +16,41 @@
     <header class="head">
         <h1>Cake Diaries</h1>
         <nav>
-            <ul class="nav-bar">
+            <ul class="nav-bar forMobile">
+                <li onclick= Hidebar()><a href="#"></a><i class='bx bx-x'></i></li>
                 <li> <a href="#product">Products</a></li> 
                 <li> <a href="#careers">Careers</a></li> 
                 <li> <a href="#contact">Contact</a></li> 
                 <li class="cart"> <a href="#cart"><i class='bx bx-cart-add' ></i></a></li> 
             </ul>
+            <ul class="nav-bar wideScreen">
+                <li class="hideIt"> <a href="#product">Products</a></li> 
+                <li class="hideIt"> <a href="#careers">Careers</a></li> 
+                <li class="hideIt"> <a href="#contact">Contact</a></li> 
+                <li class="cart hideIt"> <a href="#cart"><i class='bx bx-cart-add' ></i></a></li> 
+                <li class="menuMobile" onclick= showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
+            </ul>
         </nav>
     </header>
     <section id="home">
-        <h2><q>AT YOUR SERVICE!</q></h2>
+        <h2><q>Happy Customers</q></h2>
         <div class="message">
             <div class="box">
-                <h6>We Bake<q>Memories</q></h6>
-                <p>Be it your Birthday, Wedding Aniversary, Promotion day or any special day, We got you covered.</p>
+                <h6>We Bake <q>Memories</q></h6>
+                <p>Amazing Quality and professtional people. They provide best choices and their services are amazing. You can count on them. <br>
+                <span>@Selena White</span>
+                </p>
             </div>
             <div class="box">
-                <h6>We bake<q>Love</q></h6>
-                <p>Special Occassions require special treats. We have baked tons of items with tons of Love </p>
+                <h6> We Bake <q>Love</q></h6>
+                <p>On my Wedding day, We Ordered severals sweets and "Main Cake" from Cake Diaries and they delivered the best quality products. <br>
+                <span>@ Jennifer Gomez </span></p>
             </div>
             <div class="box">
-                <h6>We bake <q>Quality</q></h6>
-                <p>We provide quality and purity. Fresh ingredients with secure packaging.</p>
+                <h6> We Bake <q>Quality</q></h6>
+                <p>To be Honest, I am very satisfied with the services provided by Cake Diaries. The staff, the food, the management, everything was Perfect. <br>
+                <span>@ Arthur Page </span></p>
             </div>
-            
         </div>
 </section>
 
@@ -230,6 +241,8 @@
         </div>
     </div>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>

@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 #home{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(./Images/bakery.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -82,27 +82,74 @@ li a{
     
 }
 
+.nav-bar i{
+    font-size: 2.1rem;
+}
+
+/* for mobile devices*/
+.forMobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow: 0 0 .3rem #000;
+    text-align: center;
+
+}
+
+.forMobile li{
+    border: none;
+    width: 100%;
+    border-radius: 0%;
+   
+}
+
+.forMobile .cart{
+    border: none;
+    width: 100%;
+    border-radius: 0%;
+}
+.forMobile li:hover{
+    background-color: rgba(54, 51, 51, 0.207);
+    box-shadow: none;
+
+}
+ .nav-bar .menuMobile{
+    border: none;
+    box-shadow: none;
+    display: none;
+}
+
+
 .message{
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
+    display: flex;
     justify-content: center;
-    align-content: start;
+    align-items: center;
+    
 }
 
 #home h2{
     text-align: center;
     font-size: 2.6rem;
-    margin-top: 5rem;
-    text-shadow: 0 .2rem .1rem #fff; /* gives good text borde color*/
+    margin-top: 3rem;
+    text-shadow: 0 .2rem .1rem #fff; /* gives good text border color*/
    
 }
 .message .box{
+    max-width: 50%;
+    max-height: 50%;
     box-shadow: 0 0 .3rem rgb(11, 10, 10);
-    height: 15rem;
-    padding: .8rem;
+    padding: .5rem;
     backdrop-filter: blur(.2rem);
     margin: 1rem;
     text-align: center;
@@ -112,7 +159,7 @@ li a{
 }
 
 .box h6{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     border-bottom: 1px solid #000;
     color: #000;
     padding: .2rem;
@@ -120,11 +167,17 @@ li a{
 
 }
 .box p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 1rem;
     line-height: 1.7;
     letter-spacing: .01rem;
+}
+span{
+    color: #fff;
+    background-color: rgba(47, 46, 30, 0.722);
+    border-radius: 7px;
+    padding:  0 .2rem;
 }
 
 
@@ -258,20 +311,16 @@ a i:hover{
         gap: 1rem;
     }
     #home h2{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-    .message .box{
-        padding: .5rem;
-        height: 17rem;
-    }
+
     .box h6{
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         letter-spacing: normal;
     
     }
     .box p{
-        font-size: 1.3rem;
-        font-weight: 500;
+        font-size: 1rem;
         padding: .6rem;
         line-height: 1.5;
         letter-spacing: normal;
@@ -295,11 +344,23 @@ a i:hover{
     }
 
 }
+@media (max-width: 830px){
+    ul .hideIt{
+        display: none;
+    }
+    .nav-bar .menuMobile{
+        display: block;
+    }
+
+}
 
 @media (max-width: 796px){
 
     html{
         font-size: 90%;
+    }
+    #home{
+        background-position: center;
     }
 
     .Product-container{
@@ -312,33 +373,16 @@ a i:hover{
         padding: 1px 4px;
     }
 
-    .nav-bar li{
-        padding: 2px;
-        margin: .4rem;
-        
-    }
-    .nav-bar a{
-        font-size: 1.24rem;
-    }
 
     .message .box{
-        padding: .2rem;
-        height: 15rem;
-        
-    }
-    .box h6{
-        font-size: 1.13rem;
-    }
-    .box p{
-        font-size: 1.03rem;
-        line-height: 1.5;
+        padding: .2rem;        
     }
 
     #product h2{
         font-size: 2.5rem;
     }
     #home h2{
-        font-size: 1.7rem;
+        font-size: 2rem;
   
     }
 
@@ -349,15 +393,7 @@ a i:hover{
 }
 
 @media (max-width: 637px){
-    .nav-bar{
-        display: none;
-    }
-    .message{
-       display: none; 
-    }
-    #home h2{
-       display: none;
-    }
+
     .box h6{
         font-size: 1rem;
     }
@@ -365,14 +401,40 @@ a i:hover{
         font-size: 1rem;
     }
 
+
     #product h2{
         font-size: 2.2rem;
     }
 }
 
-@media (max-width: 520px){
-    html{
-        font-size: 86%;
+@media (max-width: 540px){
+
+    .message{
+        flex-wrap: wrap-reverse;
+        
+    }
+    .head h1{
+        font-size: 1.8rem;
+    }
+
+    .nav-bar i{
+        font-size: 1.8rem;
+    }
+    .message .box{
+        max-width: 70%;
+        max-height: 75%;
+    }
+    .box h6{
+        font-size: 1.3rem;
+
+    }
+
+    .box p{
+        font-size: 1rem;
+       
+    }
+    .forMobile{
+        width: 100%;
     }
 
     .Product-container{
@@ -383,6 +445,15 @@ a i:hover{
         width: 100%;
         height: auto;
         border-radius: 3%;
+    }
+    
+}
+
+@media (max-width: 380px){
+
+    .message .box{
+        max-width: 80%;
+        max-height: 80%;
     }
 }
 
